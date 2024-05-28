@@ -4,7 +4,6 @@ import { Button } from "../ui/button";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
 
-
 import Link from "next/link";
 export default function Operator() {
   return (
@@ -53,7 +52,12 @@ export default function Operator() {
           <div className="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
             <form action="#" className="space-y-6" method="POST">
               <div>
-                <label htmlFor="option" className=" flex justify-center text-sm font-medium text-black ">Choose Centre </label>
+                <label
+                  htmlFor="option"
+                  className=" flex justify-center text-sm font-medium text-black "
+                >
+                  Choose Centre{" "}
+                </label>
 
                 <select
                   name="option"
@@ -124,23 +128,30 @@ export default function Operator() {
                 </div>
               </div>
               <div>
-                <Button
+                {/* <Button
                   className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-[#51d193] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   type="submit"
                 >
                   Sign in
-                </Button>
+                </Button> */}
+
+                <Link
+                  href="/login/operator/dashboard"
+                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                >
+                  Sign in
+                </Link>
               </div>
 
-
-              
               <p>
-               
-
-                <Link href="/login/operator/signup"  className="font-medium  text-[#080808c5]   flex justify-center ">  New Operator ? Register </Link>
-                
+                <Link
+                  href="/login/operator/signup"
+                  className="font-medium  text-[#080808c5]   flex justify-center "
+                >
+                  {" "}
+                  New Operator ? Register{" "}
+                </Link>
               </p>
-                 
             </form>
           </div>
         </div>

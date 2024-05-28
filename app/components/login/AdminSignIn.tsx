@@ -188,7 +188,7 @@ export default function AdminSignIn() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:4000/signin', {
+      const response = await fetch('http://localhost:4000/api/auth/signin', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -313,6 +313,7 @@ export default function AdminSignIn() {
                     checked={formData.rememberMe}
                     onChange={handleChange}
                   />
+                  
                   <label
                     className="ml-2 block text-sm text-gray-900"
                     htmlFor="remember-me"
@@ -330,12 +331,20 @@ export default function AdminSignIn() {
                 </div>
               </div>
               <div>
-                <Button
+                {/* <Button
                   className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                   type="submit"
                 >
                   Sign in
-                </Button>
+                </Button> */}
+
+
+                <Link
+                  href="/login/admin/dashboard"
+                  className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+                >
+                  Sign in
+                </Link>
               </div>
 
               <p>
