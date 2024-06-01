@@ -104,7 +104,7 @@ export default function Admin() {
             <h2 className="text-3xl font-bold mb-4">Add New Batch Details </h2>
            
             <Link
-              className="inline-flex items-center rounded-md bg-blue-500 px-6 py-3 text-lg font-medium text-black hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-md"
+              className="inline-flex items-center rounded-md bg-blue-500 px-6 py-3 text-lg font-medium text-black hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-600 focus:ring-offset-2 shadow-md"
               href="/login/operator/batchentry"
             >
               <svg
@@ -143,7 +143,7 @@ export default function Admin() {
             <h2 className="text-3xl font-bold mb-4">Add new Candidate Details </h2>
             
             <Link
-              className="inline-flex items-center rounded-md bg-blue-500 px-6 py-3 text-lg font-medium text-black hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-md"
+              className="inline-flex items-center rounded-md bg-blue-500 px-6 py-3 text-lg font-medium text-black hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 shadow-md"
               href="/login/operator/candidateentry"
             >
               <svg

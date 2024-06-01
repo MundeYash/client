@@ -33,7 +33,7 @@ export default function Admin() {
     console.log(response.data);
     setData(response.data);
   }
-
+  console.log(data);
   useEffect(() => {
     fetchData();
   }, []);
@@ -273,7 +273,9 @@ export default function Admin() {
       {/* footer section  */}
 
       <footer className="bg-[#1f316e] text-white py-4 px-6 flex items-center justify-between">
-        <span className="flex items-center justify-center">@CC: Developed and Maintained by NIELIT Delhi</span>
+        <span className="flex items-center justify-center">
+          @CC: Developed and Maintained by NIELIT Delhi
+        </span>
 
         {/* social media Links  */}
         <div className="flex items-center gap-4">
@@ -289,8 +291,6 @@ export default function Admin() {
           </Link>
         </div>
       </footer>
-
-      
     </div>
   );
 }
